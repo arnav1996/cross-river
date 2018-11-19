@@ -1,0 +1,128 @@
+html {
+	background-color: white;
+}
+body {
+	box-shadow: 1px 1px 1px 1px;
+	background-color: #EAEDED;
+	margin: 1%;
+	padding: 2%; 
+}
+select {
+	border: white;
+	width: 35%;
+	display: inline-block;
+	height: 30px;
+	text-align: center;
+	font-size: 23px;
+	margin: 2%;
+}
+.header {
+	width: 100%;
+	height: 100px;
+}
+.header .selection {
+	margin-left: 30%;
+	margin-right: 30%;
+	padding: 10px;
+}
+.selection-box p {
+	font-family: sans-serif;
+	display: inline-block;
+	font-size: 23px;
+	width: 50%;
+	margin: 2%;
+	font-weight: bold;
+}
+.selection-box {
+	display: inline-block;
+	box-shadow: 1px 1px 1px 1px;
+	padding: 5px;
+	height: auto;
+	background-color: white;
+	width: 250px;
+
+}
+.vertical-line {
+	border: 1px solid black;
+	display: inline-block;
+	height: 10px;
+	display: inline-block;
+	min-height: 20px;
+	width: 1%;
+	background-color: black;
+}
+.Generate-report {
+	background-color: #1C4BC0;
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+	margin-left: 10%;
+}
+.boxes {
+	width: 100%;
+	height: 200px;
+	padding: 2%;
+}
+.inner-boxes {
+	width: 30%;
+	border: 2px solid black;
+	height: 100%;
+	display: inline-block;
+	margin-left: 2%;
+	background-color: white;
+
+}
+.horizantal-line {
+	width: 95%;
+	background-color: black;
+	margin-right: 2%;
+	margin-left: 2%;
+	height: 2px;
+}
+.number {
+	color: blue;
+	font-size: 50px;
+	text-align: center;
+}
+.graph{
+	padding: 5px;
+	height : 400px;
+}
+.graph-box {
+	margin-left: 3%;
+	width: 45%;
+	height: 100%;
+	border: 2px black solid;
+	display: inline-block;
+	background-color: white;
+
+}
+#title {
+	margin-left: 5%;
+	font-size: larger;
+	font-weight: bold;
+	font-family: sans-serif;
+}
+#loader {
+	top: 50%;
+	left: 50%;
+	position: absolute;
+	border: 16px solid #f3f3f3;
+	border-radius: 50%;
+	border-top: 16px solid #3498db;
+	width: 120px;
+	height: 120px;
+	-webkit-animation: spin 2s linear infinite; /* Safari */
+	animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
+}

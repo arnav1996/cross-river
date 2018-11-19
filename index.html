@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Leading Club</title>
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<script src="https://code.highcharts.com/highcharts.js"></script>
+  	<script type="text/javascript" src="js/index.js"></script>
+  
+</head>
+<body>
+	<div class="header">
+		<div class = "selection">
+			<div class = "selection-box">
+				<p> Select Year</p>
+				<div class = "vertical-line"></div>
+				<select id="year">
+					<option value="2012">2007</option>
+					<option value="2012">2008</option>
+					<option value="2012">2009</option>
+					<option value="2012">2010</option>
+					<option value="2012">2011</option>
+					<option value="2012">2012</option>
+					<option value="2013">2013</option>
+					<option value="2014">2014</option>
+					<option value="2015">2015</option>
+				</select>
+				</div>
+				<button class="Generate-report" onclick="fetchdata()">Generate Report</button>
+		</div>
+	</div>
+	<div class="boxes">
+		<div class="inner-boxes">
+			<p id="title">Total Amount Applied For</p>
+			<div class="horizantal-line"></div>
+			<p class="number" id = "applied">$1234568</p>
+		</div>
+		<div class = "inner-boxes">
+			<p id="title">Total Amount Funded</p>
+			<div class="horizantal-line"></div>
+			<p class="number" id="funded">$1234568</p>
+		</div>
+		<div class="inner-boxes">
+			<p id="title">Total Commited By Investors</p>
+			<div class="horizantal-line"></div>
+			<p class="number" id="commited">$1234568</p>
+		</div>
+	</div>
+	<div class="graph">
+		<div class="graph-box" id = "line-graph">
+		</div>
+		<div class="graph-box" id = "bar-graph"></div>
+	</div>
+	<div id="loader" visibility = "hidden"></div>
+</body>
+</html>
